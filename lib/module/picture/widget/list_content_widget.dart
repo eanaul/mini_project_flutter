@@ -59,9 +59,13 @@ class ListPictureWidget extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  'by: ${picture['author']}',
-                  style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: 
+                    Text(
+                      'by: ${picture['author']}',
+                      style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                    ),
                 ),
               ),
             ],
